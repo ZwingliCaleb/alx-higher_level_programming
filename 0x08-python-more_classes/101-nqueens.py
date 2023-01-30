@@ -93,7 +93,7 @@ if __name__ == "__main__":
     import sys
 
     if len(sys.argv) != 2:
-        print('Usage: nqueebs N')
+        print('Usage: nqueens N')
         exit(1)
     n = sys.argv[1]
     if not n.isdigit():
