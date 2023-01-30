@@ -6,7 +6,7 @@ Rectangle class
 class Rectangle:
     """Empty class"""
 
-    def __init__(self, width==0, height=0):
+    def __init__(self, width=0, height=0):
         '''method: __init___
         initialize instance of Rectangle'''
         self.__width = width
