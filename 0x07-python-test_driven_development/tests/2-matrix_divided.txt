@@ -1,0 +1,16 @@
+'''
+# Import the required function
+>>> from importlib import import_module
+>>> matrix_divided = import_module('2-matrix_divided').matrix_divided
+
+# Valid arguments
+>>> matrix_divided([[4, 7]], 2)
+[[2.0, 3.5]]
+>>> matrix_divided([[4, 7]], 0.25)
+[[16.0, 28.0]]
+>>> matrix_divided([[12, 7], [21, 23]], 13)
+[[0.92, 0.54], [1.62, 1.77]]
+
+# Invalid arguments
+>>> try:
+
