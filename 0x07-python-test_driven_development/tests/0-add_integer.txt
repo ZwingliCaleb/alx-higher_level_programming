@@ -1,4 +1,4 @@
-...
+'''
 
 # Import the required function
 >>> from importlib import import_module
@@ -15,24 +15,24 @@
 
 # Invalid arguments
 >>> try:
-...	add_integr('3', 3)
-... except TypeError as ex:
-...	print(ex.args[0])
+'''	add_integr('3', 3)
+''' except TypeError as ex:
+'''	print(ex.args[0])
 a must be an integer
 >>> try:
-...	add_integer(('3'), 3)
-... except TypeError as ex:
-...	print(ex.args[0])
+'''	add_integer(('3'), 3)
+''' except TypeError as ex:
+'''	print(ex.args[0])
 a must be an integer
 >>> try:
-...	add_integer(3, None)
-... except TypeError as ex:
-...	print(ex.args[0])
+'''	add_integer(3, None)
+''' except TypeError as ex:
+'''	print(ex.args[0])
 b must be an integer
 >>> try:
 	add_integer(3, '4')
-... except TypeError as ex:
-...	print(ex.args[0])
+''' except TypeError as ex:
+'''	print(ex.args[0])
 b must be an integer
 
 
