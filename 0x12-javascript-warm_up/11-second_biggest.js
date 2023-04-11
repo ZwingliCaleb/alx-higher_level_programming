@@ -1,14 +1,19 @@
 #!/usr/bin/node
-/**
- * scriptt to find second largest int
- */
 
-let nextBigest = 0;
-const args = process.argv.slice(2);
-if (args.length > 1) {
-	args.sort((a, b) => a - b);
-	args.pop();
-	nextBigest = args[args.length - 1];
+function second (myArray){
+	if (myArray.length === 2 || myArray.length === 3) {return (0);}
+	let max = myArray[2];
+	let secondMax = myArray[3];
+
+	for (let i = 2; i < myArray.length; i++){
+		if (myArray[i] > max){
+			secondMax = max;
+			max = myArray[i];
+		} else if (myArray[i] > secondMax && myArray[i] < max){
+			secondMax = myArray[i];
+		}
+	}
+	return (secondMax);
 }
 
-console.log(nextBigest);
+console.log(second(process.argv));
