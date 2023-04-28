@@ -8,6 +8,6 @@ if len(sys.argv) > 1:
     url = sys.argv[1]
     with urllib.request.urlopen(url) as response:
         x_request_id = response.getheader('X-Request-Id')
-        print(f"The X-Request-Id value is {X_request-Id}")
-    else:
+        print(f"{x_request_id}")
+else:
         print("Provide a URL as argument.")
