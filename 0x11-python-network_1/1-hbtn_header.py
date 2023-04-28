@@ -6,4 +6,8 @@ import sys
 
 if __name__ == "__main__":
     with req.urlopen(sys.argv[1]) as response:
-        print(response.headers.get('X-Request_Id'))
+        x_request_id = response.headers.get('X-Request-Id')
+        if x_request_id:
+            print(x_request_id)
+        else:
+            print("None")
