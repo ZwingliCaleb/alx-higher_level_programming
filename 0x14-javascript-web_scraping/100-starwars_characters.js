@@ -1,4 +1,4 @@
-#!/usr/binn/node
+#!/usr/bin/node
 //This script prints all characters of the startwars movie
 
 const request = require('request');
